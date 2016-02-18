@@ -11,8 +11,8 @@ import org.springframework.web.bind.annotation.RestController;
 @Controller
 public class HelloController {
 
-	@Value("${application.message:Hello World}")
-	private String message = "Hello Alan";
+	@Value("${application.message:Hello Roxannita Guapa}")
+	private String message = "Hello Roxannita Guapa";
 
 	@RequestMapping("/")
 	public String welcome(Map<String, Object> model) {
