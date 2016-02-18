@@ -1,1 +1,1 @@
-web: target/dummy/Application -Dhttp.port=${PORT} ${JAVA_OPTS} -DapplyEvolutions.default=true 
+web: src/main/java/Application -Dhttp.port=${PORT} ${JAVA_OPTS} -DapplyEvolutions.default=true 
