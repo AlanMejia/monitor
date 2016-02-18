@@ -7,9 +7,14 @@
 <head>
 <link rel="stylesheet" type="text/css" href="css/module.css">
 <script src="js/d3.js" charset="utf-8"></script>
-
+<style>
+body  {
+    background-image: url("http://www.hdwallpapersnew.net/wp-content/uploads/2015/03/red-flowers-hd-wallpapers-new-best-roses-images-background-download-free.jpg");
+    background-color: #cccccc;
+}
+</style>
 </head>
-<body style="background-image:url("http://www.hdwallpapersnew.net/wp-content/uploads/2015/03/red-flowers-hd-wallpapers-new-best-roses-images-background-download-free.jpg")">
+<body>
 	<%-- <c:url value="/resources/text.txt" var="url"/>
 	<spring:url value="/resources/text.txt" htmlEscape="true" var="springUrl" />
 	Spring URL: ${springUrl} at ${time}
