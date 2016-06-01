@@ -28,8 +28,8 @@ public class HelloController {
 	   @RequestMapping("/Switch")
 	    protected ModelAndView mainController(HttpServletRequest request, HttpServletResponse response){
         ModelAndView model =new ModelAndView ("/SwitchFile"); //direccion de la vista
-        String request=request.getParameter("flag");
-        model.addObject("req", request);
+        String flag=request.getParameter("flag");
+        model.addObject("req", flag);
         
         return model;
         }
