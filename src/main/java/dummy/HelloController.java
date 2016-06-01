@@ -20,6 +20,7 @@ public class HelloController {
     private String flag2="";
     
     
+    
 	@RequestMapping("/")
 	public String welcome(Map<String, Object> model) {
 		model.put("time", new Date());
@@ -31,9 +32,11 @@ public class HelloController {
 	    protected ModelAndView mainController(HttpServletRequest request, HttpServletResponse response){
     	 ModelAndView model =new ModelAndView ("/SwitchFile"); //direccion de la vista
     	    
+    	    flag2=flag;
+    	    
     	    try{
                 flag=request.getParameter("on").toString();
-    	       }catch(Exception ex){flag="error";}
+    	       }catch(Exception ex){flag=flag2;}
             
         	model.addObject("req", flag);
         	return model;
