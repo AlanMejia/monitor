@@ -28,9 +28,9 @@ public class HelloController {
 	   @RequestMapping("/Switch")
 	    protected ModelAndView mainController(HttpServletRequest request, HttpServletResponse response){
     	 ModelAndView model =new ModelAndView ("/SwitchFile"); //direccion de la vista
-    	 if (flag.equals("")){
+    	 
             flag=request.getParameter("on").toString();
-        	}
+        	
             
         	model.addObject("req", flag);
         	return model;
