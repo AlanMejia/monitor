@@ -15,10 +15,7 @@ body  {
 </style>
 </head>
 <body id="body">
- <script>
-  var req= <%= request.getParameter("on") %>;
-  document.getElementById("body").innerHTML = req;
- </script>
-  
+  <c:out value="${req}" escapeXml="false"/><br>
+  <%= request.getParameter("on") %>;
 </body>
 </html>

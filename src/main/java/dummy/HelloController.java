@@ -7,6 +7,9 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import org.springframework.web.servlet.ModelAndView;
 
 @Controller
 public class HelloController {
@@ -23,10 +26,13 @@ public class HelloController {
 	}
 	
 	   @RequestMapping("/Switch")
-       public String switchFlag(Map<String, Object> model) {
-       	       return "SwitchFile";
-	}
-	
+	    protected ModelAndView mainController(HttpServletRequest request, HttpServletResponse response){
+        ModelAndView model =new ModelAndView ("/SwitchFile"); //direccion de la vista
+        String request=request.getParameter("flag");
+        model.addObject("req", request);
+        
+        return model;
+        }
 		
 	
 	@RequestMapping("/hi")
