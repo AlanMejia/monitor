@@ -33,7 +33,7 @@ public class HelloController {
     	    
     	    try{
                 flag=request.getParameter("on").toString();
-    	       }catch(Exception ex){flag="error"}
+    	       }catch(Exception ex){flag="error";}
             
         	model.addObject("req", flag);
         	return model;
