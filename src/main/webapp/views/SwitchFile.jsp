@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 
 <%@ taglib prefix="spring" uri="http://www.springframework.org/tags"%>
@@ -16,6 +18,6 @@ body  {
 </head>
 <body id="body">
   <c:out value="${req}" escapeXml="false"/><br>
-  <%= request.getParameter("on") %>;
+  <%= request.getParameter("on") %>
 </body>
 </html>

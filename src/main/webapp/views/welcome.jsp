@@ -25,8 +25,9 @@
 <body>
   <h1 class="jumbotron" style="background-color:burlywood; opacity:.8">Home Control Center</h1>
   
-  <form action="/Switch" method="post" style="margin-bottom: 7px">
-        <input style="margin-bottom:20px" class="btn btn-success" type="submit" value="Turn On Device" name="on">
+  <form action="/Switch" method="post" style="margin-bottom: 7px" >
+        <input style="margin-bottom:20px" class="btn btn-success" type="submit" value="Turn On Device" name="on"/>
+</form>
   </form>
   
   <form action="/Switch" method="post" style="margin-bottom: 7px">
