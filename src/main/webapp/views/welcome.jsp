@@ -25,16 +25,14 @@
 <body>
   <h1 class="jumbotron" style="background-color:burlywood; opacity:.8">Home Control Center</h1>
   
-  <form action="/ON" method="post" style="margin-bottom: 7px">
-        <input style="margin-bottom:20px" class="btn btn-primary" type="submit" value="Turn On Device" name="on">
+  <form action="/Switch" method="post" style="margin-bottom: 7px">
+        <input style="margin-bottom:20px" class="btn btn-success" type="submit" value="Turn On Device" name="on">
   </form>
   
-  <form action="/ON" method="post" style="margin-bottom: 7px">
-        <input style="margin-bottom:20px" class="btn btn-primary" type="submit" value="Turn Off Device" name="on">
+  <form action="/Switch" method="post" style="margin-bottom: 7px">
+        <input style="margin-bottom:20px" class="btn btn-info" type="submit" value="Turn Off Device" name="on">
   </form>
 
-  <button style="margin-bottom:20px" type="button" id="showScript" class="btn btn-success">Turn On Device</button>
-  <button style="margin-bottom:20px" type="button" id="showScript" class="btn btn-info">Turn Off Device</button>
   
 	<%-- <c:url value="/resources/text.txt" var="url"/>
 	<spring:url value="/resources/text.txt" htmlEscape="true" var="springUrl" />

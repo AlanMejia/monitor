@@ -14,8 +14,12 @@ body  {
 }
 </style>
 </head>
-<body>
+<body id="body">
+ <script>
+  var req=request.getParameter("on");
+  document.getElementById("body").innerHTML = req;
+ </script>
   <%= request.getParameter("on") %>
-  <c:out value="${req}" escapeXml="false"/>
+  
 </body>
 </html>

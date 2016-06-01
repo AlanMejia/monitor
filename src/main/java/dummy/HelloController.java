@@ -13,7 +13,7 @@ public class HelloController {
 
 	@Value("${application.message:Hello Roxannita Guapa}")
 	private String message = "Hello Roxannita Guapa";
-    private String switchFlag;
+    
     
 	@RequestMapping("/")
 	public String welcome(Map<String, Object> model) {
@@ -22,19 +22,12 @@ public class HelloController {
 		return "welcome";
 	}
 	
-	@RequestMapping("/ON")
-       public String switchOn(Map<String, Object> model) {
-       	     	switchFlag="ON";
-				model.put("switchFlag", this.switchFlag);
-			    return "SwitchFile";
+	   @RequestMapping("/Switch")
+       public String switchFlag(Map<String, Object> model) {
+       	       return "SwitchFile";
 	}
 	
-		@RequestMapping("/OFF")
-       public String switchOff(Map<String, Object> model) {
-             	switchFlag="OFF";
-				model.put("switchFlag", this.switchFlag);
-			    return "SwitchFile";
-	}
+		
 	
 	@RequestMapping("/hi")
 	public String hi() {
