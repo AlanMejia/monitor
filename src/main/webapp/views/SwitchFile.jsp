@@ -16,10 +16,9 @@ body  {
 </head>
 <body id="body">
  <script>
-  var req=request.getParameter("on");
+  var req= <%= request.getParameter("on") %>;
   document.getElementById("body").innerHTML = req;
  </script>
-  <%= request.getParameter("on") %>
   
 </body>
 </html>
