@@ -31,9 +31,9 @@ public class HelloController {
 	    protected ModelAndView mainController(HttpServletRequest request, HttpServletResponse response){
     	 ModelAndView model =new ModelAndView ("/SwitchFile"); //direccion de la vista
     	    
-    	    if (!"".equals(request.getParameter("on").toString())){
+    	    try{
                 flag=request.getParameter("on").toString();
-    	       }
+    	       }catch(Exception ex){flag="error"}
             
         	model.addObject("req", flag);
         	return model;
