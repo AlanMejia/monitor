@@ -15,6 +15,7 @@ body  {
 </style>
 </head>
 <body>
-  <h1> <%= request.getParameter("on") %></h1>
+  <%= request.getParameter("on") %>
+  <c:out value="${req}" escapeXml="false"/>
 </body>
 </html>
