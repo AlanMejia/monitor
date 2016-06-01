@@ -45,7 +45,7 @@
 	
 	
 	
-<script>
+ <%--<script>
 	var holder = d3.select("body") // select the 'body' element
     .append("svg")           // append an SVG element to the body
     .attr("width", 449)      // make the SVG element 449 pixels wide
@@ -64,6 +64,7 @@ holder.append("circle")        // attach a circle
   .attr("text-anchor", "middle") // set anchor y justification 
   .text("${message}");          // define the text to display  
   
-</script>
+</script> --%>
+
 </body>
 </html>
