@@ -5,17 +5,37 @@
 
 <html lang="en">
 <head>
-<link rel="stylesheet" type="text/css" href="css/module.css">
-<script src="js/d3.js" charset="utf-8"></script>
-<style>
-body  {
-    background-image: url("http://science-all.com/images/wallpapers/home-wallpaper/home-wallpaper-6.jpg");
-    background-color: #cccccc;
-}
-</style>
+  <link rel="stylesheet" type="text/css" href="css/module.css">
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>Domotics Welcome Page</title>
+  <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" rel="stylesheet">
+  <script src="js/d3.js" charset="utf-8"></script>
+  <style>
+      body  {
+        background-image: url("http://science-all.com/images/wallpapers/home-wallpaper/home-wallpaper-6.jpg");
+        -moz-background-size: cover;
+        -webkit-background-size: cover;
+        background-size: cover;
+        background-position: top center !important;
+        background-repeat: no-repeat !important;
+        background-attachment: fixed;
+            }
+  </style>
 </head>
 <body>
+  <h1 class="jumbotron" style="background-color:burlywood; opacity:.8">Home Control Center</h1>
+  
+  <form action="/ON" method="post" style="margin-bottom: 7px">
+        <input style="margin-bottom:20px" class="btn btn-primary" type="submit" value="Turn On Device" name="on">
+  </form>
+  
+  <form action="/ON" method="post" style="margin-bottom: 7px">
+        <input style="margin-bottom:20px" class="btn btn-primary" type="submit" value="Turn Off Device" name="on">
+  </form>
 
+  <button style="margin-bottom:20px" type="button" id="showScript" class="btn btn-success">Turn On Device</button>
+  <button style="margin-bottom:20px" type="button" id="showScript" class="btn btn-info">Turn Off Device</button>
+  
 	<%-- <c:url value="/resources/text.txt" var="url"/>
 	<spring:url value="/resources/text.txt" htmlEscape="true" var="springUrl" />
 	Spring URL: ${springUrl} at ${time}
