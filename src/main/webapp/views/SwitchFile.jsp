@@ -18,6 +18,6 @@ body  {
 </head>
 <body id="body">
   <c:out value="${req}" escapeXml="false"/><br>
-  <%= request.getParameter("on") %>
+  
 </body>
 </html>

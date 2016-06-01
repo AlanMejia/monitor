@@ -16,7 +16,7 @@ public class HelloController {
 
 	@Value("${application.message:Hello Roxannita Guapa}")
 	private String message = "Hello Roxannita Guapa";
-    
+    private String flag="";
     
 	@RequestMapping("/")
 	public String welcome(Map<String, Object> model) {
@@ -27,11 +27,13 @@ public class HelloController {
 	
 	   @RequestMapping("/Switch")
 	    protected ModelAndView mainController(HttpServletRequest request, HttpServletResponse response){
-        ModelAndView model =new ModelAndView ("/SwitchFile"); //direccion de la vista
-        String flag=request.getParameter("on").toString();
-        model.addObject("req", flag);
-        
-        return model;
+    	 ModelAndView model =new ModelAndView ("/SwitchFile"); //direccion de la vista
+    	 if (flag.equals("")){
+            flag=request.getParameter("on").toString();
+        	}
+            
+        	model.addObject("req", flag);
+        	return model;
         }
 		
 	
