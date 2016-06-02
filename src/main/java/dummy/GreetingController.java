@@ -10,7 +10,7 @@ public class GreetingController {
    
 
     @RequestMapping("/Flag")
-    public Greeting greeting() {
+    public String greeting() {
         return HelloController.flag;
     }
 }
