@@ -16,7 +16,7 @@ public class HelloController {
 
 	@Value("${application.message:Hello Roxannita Guapa}")
 	private String message = "Hello Roxannita Guapa";
-    private String flag="";
+    public static String flag="";
     private String flag2="";
     
     
@@ -40,7 +40,7 @@ public class HelloController {
             
         	model.addObject("req", flag);
         	return model;
-        }
+               }
 		
 	
 	@RequestMapping("/hi")
