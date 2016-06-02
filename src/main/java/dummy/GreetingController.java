@@ -6,11 +6,15 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 public class GreetingController {
-
+    String flagService="";
    
 
     @RequestMapping("/Flag")
     public String greeting() {
-        return HelloController.flag;
+        if HelloController.flag.equals("Turn On Device"){
+            flagService="ON";
+        }else flagService="OFF";
+        
+        return flagService;
     }
 }
