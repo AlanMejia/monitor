@@ -11,7 +11,7 @@ public class GreetingController {
 
     @RequestMapping("/Flag")
     public String greeting() {
-        if HelloController.flag.equals("Turn On Device"){
+        if (HelloController.flag.equals("Turn On Device")){
             flagService="ON";
         }else flagService="OFF";
         
