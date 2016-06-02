@@ -13,7 +13,7 @@
   <script src="js/d3.js" charset="utf-8"></script>
   <style>
       body  {
-        background-image: url("http://science-all.com/images/wallpapers/home-wallpaper/home-wallpaper-6.jpg");
+        background-image: url("http://api.ning.com/files/Z-JJSpQIZ69X*ewPhMFPeEdrnT67nhNhr4RMgGpSQAZ8FC58vTUR6EOOGanPLsQmVmUQskvjrb11bDCGfnbHpIfKTPnViGCV/mrbean.jpg");
         -moz-background-size: cover;
         -webkit-background-size: cover;
         background-size: cover;
@@ -25,7 +25,7 @@
 </head>
 <body>
 
-  <h1 id="res" class="jumbotron"> </h1>
+  <h1 id="res" class="jumbotron" style="background-color:burlywood; opacity:.7; text-align: center"> </h1>
   
   <script>
             var req="${req}";
