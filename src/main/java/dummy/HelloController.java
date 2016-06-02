@@ -37,6 +37,8 @@ public class HelloController {
     	    try{
                 flag=request.getParameter("on").toString();
     	       }catch(Exception ex){flag=flag2;}
+    	       
+    	       
             
         	model.addObject("req", flag);
         	return model;

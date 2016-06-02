@@ -10,17 +10,10 @@
   <link rel="stylesheet" type="text/css" href="css/module.css">
   <title>Device Response</title>
   <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" rel="stylesheet">
-
   <style>
   body  {
     background-image: url("http://jhwallpaper.com/wp-content/uploads/2016/04/Amazing-Wallpapers-2OT.jpg");
-    -moz-background-size: cover;
-    -webkit-background-size: cover;
-    background-size: cover;
-    background-position: top center !important;
-    background-repeat: no-repeat !important;
-    background-attachment: fixed;
-  }
+    }
   h1{
     background-color:blue;
     opacity:.7;
@@ -30,9 +23,9 @@
   
   </style>
 </head>
-<body >
+<body>
 
-  <h1 id="res" class="jumbotron"></h1>
+  <h1 id="res" class="jumbotron"> </h1>
   
   <script>
             var req="${req}";
