@@ -12,7 +12,7 @@ import javax.servlet.http.HttpServletResponse;
 import org.springframework.web.servlet.ModelAndView;
 
 @RestController
-public class RestController {
+public class Controller {
 
 
     
