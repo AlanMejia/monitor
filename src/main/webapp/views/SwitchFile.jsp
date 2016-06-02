@@ -21,11 +21,18 @@
     background-repeat: no-repeat !important;
     background-attachment: fixed;
   }
+  h1{
+    background-color:blue;
+    opacity:.7;
+    text-align: center;
+  }
+    
+  
   </style>
 </head>
 <body >
 
-<h1 id="res" class="jumbotron" style="background-color:blue; opacity:.65" style="text-align: center"></h1>
+  <h1 id="res" class="jumbotron"></h1>
   
   <script>
             var req="${req}";
