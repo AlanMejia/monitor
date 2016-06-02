@@ -20,7 +20,7 @@ body  {
   <c:out value="${req}" escapeXml="false"/><br>
   <script>
             var req="${req}";
-            if (req=="Device Turn On"){
+            if (req=="Turn On Device"){
               document.getElementById("body").innerHTML = "Device has been enabled";
             }else {document.getElementById("body").innerHTML = "Device has been disabled";}
   </script>
