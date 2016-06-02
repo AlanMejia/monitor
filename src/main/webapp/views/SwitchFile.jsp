@@ -10,17 +10,17 @@
   <link rel="stylesheet" type="text/css" href="css/module.css">
   <title>Device Response</title>
   <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" rel="stylesheet">
+  <script src="js/d3.js" charset="utf-8"></script>
   <style>
-  body  {
-    background-image: url("http://jhwallpaper.com/wp-content/uploads/2016/04/Amazing-Wallpapers-2OT.jpg");
-    }
-  h1{
-    background-color:blue;
-    opacity:.7;
-    text-align: center;
-  }
-    
-  
+      body  {
+        background-image: url("http://science-all.com/images/wallpapers/home-wallpaper/home-wallpaper-6.jpg");
+        -moz-background-size: cover;
+        -webkit-background-size: cover;
+        background-size: cover;
+        background-position: top center !important;
+        background-repeat: no-repeat !important;
+        background-attachment: fixed;
+            }
   </style>
 </head>
 <body>
