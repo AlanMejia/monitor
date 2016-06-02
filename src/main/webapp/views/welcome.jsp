@@ -23,15 +23,15 @@
   </style>
 </head>
 <body>
-  <h1 class="jumbotron" style="background-color:blue; opacity:.85">Home Control Center</h1>
+  <h1 class="jumbotron" style="background-color:blue; opacity:.65">Home Control Center</h1>
   
   <form action="/Switch" method="post" style="margin-bottom: 7px" >
-        <input style="margin-bottom:20px" class="btn btn-success" type="submit" value="Turn On Device" name="on"/>
+        <input style="margin-bottom:10px" class="btn btn-success" type="submit" value="Turn On Device" name="on"/>
 </form>
   </form>
   
   <form action="/Switch" method="post" style="margin-bottom: 7px">
-        <input style="margin-bottom:20px" class="btn btn-info" type="submit" value="Turn Off Device" name="on">
+        <input style="margin-bottom:10px" class="btn btn-info" type="submit" value="Turn Off Device" name="on">
   </form>
 
   
