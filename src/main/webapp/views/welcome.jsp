@@ -11,15 +11,14 @@
   <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" rel="stylesheet">
   <script src="js/d3.js" charset="utf-8"></script>
   <style>
-      body  {
-        background-image: url("http://science-all.com/images/wallpapers/home-wallpaper/home-wallpaper-6.jpg");
+      html  {
+        background-image: url("http://science-all.com/images/wallpapers/home-wallpaper/home-wallpaper-6.jpg") no-repeat center center fixed;
         -moz-background-size: cover;
         -webkit-background-size: cover;
+        -o-background-size: cover;
         background-size: cover;
-        background-position: top center !important;
-        background-repeat: no-repeat !important;
-        background-attachment: fixed;
-            }
+        
+          }
       @media only screen and (max-width:480px) { 
                  .bt {
                  width:50%;
