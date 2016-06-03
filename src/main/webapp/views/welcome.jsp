@@ -20,18 +20,24 @@
         background-repeat: no-repeat !important;
         background-attachment: fixed;
             }
+      @media only screen and (max-width:480px) { 
+                 .bt {
+                 width:50%;
+                 height:50%;
+                    }
+            }
   </style>
 </head>
 <body>
   <h1 class="jumbotron" style="background-color:blue; opacity:.7; text-align: center" >Home Control Center</h1>
   
   <form action="/Switch" method="post" style="margin-bottom: 7px" >
-        <input style="margin-left:10px" class="btn btn-success" type="submit" value="Turn On Device" name="on"/>
+        <input style="margin-left:10px" class="btn btn-success bt" type="submit" value="Turn On Device" name="on"/>
 </form>
   </form>
   
   <form action="/Switch" method="post" style="margin-bottom: 7px">
-        <input style="margin-bottom:10px; margin-left:10px" class="btn btn-info" type="submit" value="Turn Off Device" name="on">
+        <input style="margin-bottom:10px; margin-left:10px" class="btn btn-info bt" type="submit" value="Turn Off Device" name="on">
   </form>
 
   
