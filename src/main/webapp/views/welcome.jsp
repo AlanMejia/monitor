@@ -12,7 +12,7 @@
   <script src="js/d3.js" charset="utf-8"></script>
   <style>
       html  {
-        background-image: url("http://science-all.com/images/wallpapers/home-wallpaper/home-wallpaper-6.jpg") no-repeat center center fixed;
+        background-image: url("http://science-all.com/images/wallpapers/home-wallpaper/home-wallpaper-6.jpg");
         -moz-background-size: cover;
         -webkit-background-size: cover;
         -o-background-size: cover;
