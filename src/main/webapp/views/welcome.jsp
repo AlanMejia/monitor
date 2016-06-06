@@ -11,16 +11,23 @@
   <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" rel="stylesheet">
   <script src="js/d3.js" charset="utf-8"></script>
   <style>
-      body {
-        background-image: url("http://science-all.com/images/wallpapers/home-wallpaper/home-wallpaper-6.jpg");
-        -moz-background-size: cover;
-        -webkit-background-size: cover;
-        background-size: cover;
-        background-position: top center !important;
-        background-repeat: no-repeat !important;
-        background-attachment: fixed;
-        
-          }
+      
+     
+    .background {
+          position: fixed;
+          top: 0;
+          left: 0;
+          right: 0;
+           bottom: 0;
+           background:url("http://science-all.com/images/wallpapers/home-wallpaper/home-wallpaper-6.jpg") no-repeat center center fixed;
+          -webkit-background-size: cover;
+          -moz-background-size: cover;
+          -o-background-size: cover;
+          background-size: cover;
+          height: 100%; /* or change accordingly - not quite clear in question */
+          width: 100%;
+          background-color: #131516 !important;
+    }
       @media only screen and (max-width:480px) { 
                  .bt {
                  width:75%;
@@ -29,6 +36,7 @@
             }
   </style>
 </head>
+<div class="background">
 <body>
   <h1 class="jumbotron" style="background-color:blue; opacity:.7; text-align: center" >Home Control Center</h1>
   
@@ -73,4 +81,5 @@ holder.append("circle")        // attach a circle
 </script> --%>
 
 </body>
+</div>
 </html>
