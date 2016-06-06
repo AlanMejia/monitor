@@ -24,7 +24,7 @@
       @media only screen and (max-width:480px) { 
                  .bt {
                  width:50%;
-                 height:100;
+                
                     }
             }
   </style>
