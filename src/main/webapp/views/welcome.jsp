@@ -15,15 +15,15 @@
         background-image: url("http://science-all.com/images/wallpapers/home-wallpaper/home-wallpaper-6.jpg");
         -moz-background-size: cover;
         -webkit-background-size: cover;
-        -o-background-size: cover;
         background-size: cover;
+        background-position: top center !important;
         background-repeat: no-repeat !important;
         background-attachment: fixed;
         
           }
       @media only screen and (max-width:480px) { 
                  .bt {
-                 width:50%;
+                 width:75%;
                 
                     }
             }
