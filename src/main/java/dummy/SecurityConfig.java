@@ -13,5 +13,4 @@ import org.springframework.security.config.annotation.web.configuration.WebSecur
 @EnableGlobalMethodSecurity( securedEnabled = true )
 public class SecurityConfig extends WebSecurityConfigurerAdapter {
     
-    
 }
