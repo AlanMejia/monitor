@@ -14,8 +14,7 @@ import org.springframework.web.servlet.ModelAndView;
 @Controller
 public class HelloController {
 
-	@Value("${application.message:Hello Roxannita Guapa}")
-	private String message = "Hello Roxannita Guapa";
+
     public static String flag="";
     private String flag2="";
     
@@ -45,15 +44,3 @@ public class HelloController {
                }
 		
 	
-	@RequestMapping("/hi")
-	public String hi() {
-		
-		return "Welcome from spring boot";
-	}
-
-	@RequestMapping("/foo")
-	public String foo(Map<String, Object> model) {
-		throw new RuntimeException("Foo");
-	}
-
-}
