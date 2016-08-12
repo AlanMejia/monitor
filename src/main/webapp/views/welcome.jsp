@@ -5,20 +5,23 @@
 
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- Latest compiled and minified CSS -->
-  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
-
- 
-  
   <link rel="stylesheet" type="text/css" href="css/module.css">
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <title>Domotics Welcome Page</title>
+  <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" rel="stylesheet">
   <script src="js/d3.js" charset="utf-8"></script>
   <style>
       
-     
+      body {
+        background-image: url("http://science-all.com/images/wallpapers/home-wallpaper/home-wallpaper-6.jpg");
+        -moz-background-size: cover;
+        -webkit-background-size: cover;
+        background-size: cover;
+        background-position: top center !important;
+        background-repeat: no-repeat !important;
+        background-attachment: fixed;
+                  }
+          
     .background {
           position: fixed;
           top: 0;
