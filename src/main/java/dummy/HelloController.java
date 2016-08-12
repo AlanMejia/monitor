@@ -28,6 +28,8 @@ public class HelloController {
 		return "welcome";
 	}
 	
+	
+	   @Secured(ROLE_ADMIN)
 	   @RequestMapping("/Switch")
 	    protected ModelAndView mainController(HttpServletRequest request, HttpServletResponse response){
     	 ModelAndView model =new ModelAndView ("/SwitchFile"); //direccion de la vista
