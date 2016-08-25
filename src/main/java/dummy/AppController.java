@@ -13,7 +13,7 @@ import org.springframework.web.servlet.ModelAndView;
 import org.springframework.security.access.annotation.Secured;
 
 @Controller
-public class HelloController {
+public class AppController {
 
 	@Value("${application.message:Hello Roxannita Guapa}")
 	private String message = "Hello Roxannita Guapa";
@@ -22,6 +22,7 @@ public class HelloController {
     
     
     
+	@Secured("ROLE_ADMIN")
 	@RequestMapping("/")
 	public String welcome(Map<String, Object> model) {
 		model.put("time", new Date());
@@ -30,7 +31,7 @@ public class HelloController {
 	}
 	
 	
-	 //  @Secured("ROLE_ADMIN")
+	   @Secured("ROLE_ADMIN")
 	   @RequestMapping("/Switch")
 	    protected ModelAndView mainController(HttpServletRequest request, HttpServletResponse response){
     	 ModelAndView model =new ModelAndView ("/SwitchFile"); //direccion de la vista
