@@ -18,7 +18,7 @@ public class AppController {
 
 
     public static FlagObject flag;
-    private String flag2;
+    
     
      @Autowired
     public AppController(FlagObject obj){
@@ -34,22 +34,22 @@ public class AppController {
 	}
 	
 	
-	   @Secured("ROLE_ADMIN")
-	   @RequestMapping("/Switch")
-	    protected ModelAndView mainController(HttpServletRequest request, HttpServletResponse response){
+    @Secured("ROLE_ADMIN")
+	@RequestMapping(value="/Switch", method=RequestMethod.GET)
+    protected ModelAndView mainController(HttpServletRequest request, HttpServletResponse response){
     	 ModelAndView model =new ModelAndView ("/SwitchFile"); //direccion de la vista
     	    
-    	    flag2=flag.flag;
+    	   
     	    
-    	    try{
+    	  //try{
                 flag.flag=request.getParameter("on").toString();
-    	       }catch(Exception ex){flag.flag=flag2;}
+    	     //  }catch(Exception ex){flag.flag=flag2;}
     	       
     	       
             
         	model.addObject("req", flag.flag);
         	return model;
-               }
+    }
 		
 	
 
