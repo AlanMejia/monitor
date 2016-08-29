@@ -42,12 +42,12 @@ public class AppController {
     	   
     	    
     	  //try{
-                flag.flag=request.getParameter("on").toString();
+                flag.setFlag(request.getParameter("on").toString());
     	     //  }catch(Exception ex){flag.flag=flag2;}
     	       
     	       
             
-        	model.addObject("req", flag.flag);
+        	model.addObject("req", flag.getFlag());
         	return model;
     }
 		
