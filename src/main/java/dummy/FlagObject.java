@@ -8,7 +8,7 @@ import org.springframework.stereotype.Component;
 @Component
 public class FlagObject {
 
-    private String flag;
+    protected String flag;
 
     public String getFlag() {
         return flag;
