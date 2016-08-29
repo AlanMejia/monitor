@@ -11,6 +11,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import org.springframework.web.servlet.ModelAndView;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.access.annotation.Secured;
 
 @Controller
 public class AppController {
@@ -25,28 +26,21 @@ public class AppController {
     }
    
     
-	
-	@RequestMapping("/")
+	@Secured("ROLE_ADMIN")
+	@RequestMapping("/Home")
 	public String welcome(Map<String, Object> model) {
 		model.put("time", new Date());
 		return "welcome";
 	}
 	
 	
-   
+    @Secured("ROLE_ADMIN")
 	@RequestMapping("/Switch")
     protected ModelAndView mainController(HttpServletRequest request, HttpServletResponse response){
+    	
     	 ModelAndView model =new ModelAndView ("/SwitchFile"); //direccion de la vista
-    	    
-    	   
-    	    
-    	  //try{
-                flag.setFlag(request.getParameter("on").toString());
-    	     //  }catch(Exception ex){flag.flag=flag2;}
-    	       
-    	       
-            
-        	model.addObject("req", flag.getFlag());
+    	 flag.setFlag(request.getParameter("on").toString());
+    	 model.addObject("req", flag.getFlag());
         	return model;
     }
 		
