@@ -11,16 +11,20 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import org.springframework.web.servlet.ModelAndView;
 import org.springframework.security.access.annotation.Secured;
+import org.springframework.beans.factory.annotation.Autowired;
 
 @Controller
 public class AppController {
 
-	@Value("${application.message:Hello Roxannita Guapa}")
-	private String message = "Hello Roxannita Guapa";
-    public static String flag="";
-    private String flag2="";
+
+    public static FlagObject flag;
+    private String flag2;
     
-    
+     @Autowired
+    public AppController(FlagObject obj){
+        this.flag=obj;
+    }
+   
     
 	@Secured("ROLE_ADMIN")
 	@RequestMapping("/")
