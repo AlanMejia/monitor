@@ -10,7 +10,7 @@ import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
 
 @Configuration
-@EnableGlobalMethodSecurity( securedEnabled = true )
+@EnableGlobalMethodSecurity( securedEnabled = false )
 public class SecurityConfig extends WebSecurityConfigurerAdapter {
     
 }
