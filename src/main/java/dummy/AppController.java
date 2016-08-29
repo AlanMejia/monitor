@@ -35,7 +35,7 @@ public class AppController {
 	
 	
     @Secured("ROLE_ADMIN")
-	@RequestMapping(value="/Switch", method=RequestMethod.GET)
+	@RequestMapping("/Switch")
     protected ModelAndView mainController(HttpServletRequest request, HttpServletResponse response){
     	 ModelAndView model =new ModelAndView ("/SwitchFile"); //direccion de la vista
     	    
