@@ -26,7 +26,7 @@ public class AppController {
     }
    
     
-	@Secured("ROLE_ADMIN")
+	
 	@RequestMapping("/")
 	public String welcome(Map<String, Object> model) {
 		model.put("time", new Date());
@@ -34,7 +34,7 @@ public class AppController {
 	}
 	
 	
-    @Secured("ROLE_ADMIN")
+   
 	@RequestMapping("/Switch")
     protected ModelAndView mainController(HttpServletRequest request, HttpServletResponse response){
     	 ModelAndView model =new ModelAndView ("/SwitchFile"); //direccion de la vista

@@ -11,7 +11,7 @@ public class FlagController {
     
     private String flagService;
     
-	@Secured("ROLE_ADMIN")
+	
     @RequestMapping("/Flag")
     public String greeting() {
         if (AppController.flag.getFlag().equals("Turn On Device")){
