@@ -43,7 +43,7 @@ public class AppController {
     	    
     	    try{
                 flag.flag=request.getParameter("on").toString();
-    	       }catch(Exception ex){flag=flag2;}
+    	       }catch(Exception ex){flag.flag=flag2;}
     	       
     	       
             
