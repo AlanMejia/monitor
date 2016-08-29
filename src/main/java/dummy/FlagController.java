@@ -9,6 +9,7 @@ import org.springframework.security.access.annotation.Secured;
 @RestController
 public class FlagController {
     
+    private String flagService;
     
 	@Secured("ROLE_ADMIN")
     @RequestMapping("/Flag")
