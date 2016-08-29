@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 
+<%@ taglib prefix="spring" uri="http://www.springframework.org/tags"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 
 <html lang="en">
@@ -50,11 +51,13 @@
   
   <form action="/Switch" method="post" style="margin-bottom: 7px" >
         <input style="margin-left:10px" class="btn-lg btn-success bt" type="submit" value="Turn On Device" name="on"/>
+        <input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}"/>
 </form>
   </form>
   
   <form action="/Switch" method="post" style="margin-bottom: 7px">
         <input style="margin-bottom:10px; margin-left:10px" class="btn-lg btn-info bt" type="submit" value="Turn Off Device" name="on">
+        <input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}"/>
   </form>
 
   

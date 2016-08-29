@@ -2,7 +2,7 @@
 
 <!DOCTYPE html>
 
-
+<%@ taglib prefix="spring" uri="http://www.springframework.org/tags"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 
 <html lang="en">
@@ -25,7 +25,7 @@
   </style>
 </head>
 <body>
-  <input type="hidden" th:name="${_csrf.parameterName}" th:value="${_csrf.token}" />
+  
   <h1 id="res" class="jumbotron" style="background-color:burlywood; opacity:.7; text-align: center"> </h1>
   
   <script>

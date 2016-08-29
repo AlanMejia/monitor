@@ -27,7 +27,7 @@ public class AppController {
    
     
 	@Secured("ROLE_ADMIN")
-	@RequestMapping("/Home")
+	@RequestMapping("/")
 	public String welcome(Map<String, Object> model) {
 		model.put("time", new Date());
 		return "welcome";
