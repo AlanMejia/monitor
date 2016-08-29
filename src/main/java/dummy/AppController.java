@@ -40,15 +40,15 @@ public class AppController {
 	    protected ModelAndView mainController(HttpServletRequest request, HttpServletResponse response){
     	 ModelAndView model =new ModelAndView ("/SwitchFile"); //direccion de la vista
     	    
-    	    flag2=flag;
+    	    flag2=flag.flag;
     	    
     	    try{
-                flag=request.getParameter("on").toString();
+                flag.flag=request.getParameter("on").toString();
     	       }catch(Exception ex){flag=flag2;}
     	       
     	       
             
-        	model.addObject("req", flag);
+        	model.addObject("req", flag.flag);
         	return model;
                }
 		
